@@ -1,0 +1,68 @@
+{
+    "generator": "Mickey Mouse Address Generator",
+    "description": "Generates random addresses inspired by the world of Mickey Mouse and friends.",
+    "components": {
+      "houseNumbers": [
+        1, 5, 10, 25, 50, 75, 100, 200, 404, 505, 600, 777, 888, 999, 1234, 2020, 3030, 5050, 6666
+      ],
+      "streetNames": [
+        "Mickey Mouse Boulevard",
+        "Minnie Mouse Lane",
+        "Donald Duck Drive",
+        "Goofy Street",
+        "Pluto Path",
+        "Mickey's Funhouse Avenue",
+        "Toontown Road",
+        "Disneyland Way",
+        "Fantasia Avenue",
+        "Main Street USA",
+        "Steamboat Willie Way",
+        "Adventureland Drive",
+        "Tomorrowland Boulevard",
+        "The Magic Kingdom Road",
+        "The Walt Disney Avenue",
+        "The Enchanted Forest Lane",
+        "Duckburg Road",
+        "Goofy's Glade",
+        "Disney Castle Drive",
+        "The Sorcerer's Street"
+      ],
+      "neighborhoods": [
+        "Toontown",
+        "Mickey's Magic Kingdom",
+        "Main Street USA",
+        "Adventureland",
+        "Tomorrowland",
+        "Fantasyland",
+        "Duckburg",
+        "Pluto's Park",
+        "Disney Village",
+        "Mickey's Funhouse",
+        "Minnie Mouse's Garden",
+        "Goofy's Grove",
+        "Steamboat Willie Wharf",
+        "The Magic Kingdom",
+        "The Enchanted Forest",
+        "Walt Disney World",
+        "The Sorcerer's Realm",
+        "Walt Disney Studios",
+        "Pixie Hollow",
+        "The Hundred Acre Wood"
+      ],
+      "zipCodes": [
+        "00001", "12345", "67890", "11223", "33333", "55555", "66666", "88888",
+        "10101", "20202", "30303", "40404", "50505", "60606", "70707", "80808",
+        "90909", "11111", "12321", "20212"
+      ],
+      "states": [
+        "California",
+        "Toontown",
+        "Magic Kingdom",
+        "Fantasyland",
+        "Walt Disney World",
+        "Duckburg",
+        "Pixie Hollow"
+      ]
+    }
+  }
+  

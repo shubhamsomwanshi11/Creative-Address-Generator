@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Address Generator</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <section class="section">
+        <div id="mainBox">
+
+            <!-- First Div -->
+            <div id="template" class="columns  is-flex-desktop-only is-align-items-center">
+                <div class="column is-4">
+                    <figure class="image" style="margin: auto;">
+                        <img class="" style="border-radius:8px ;" src="./assets/simpsons.png" />
+                    </figure>
+                </div>
+                <div class="column">
+                    <div class="box" style="background-color: #13141e;">
+                        <h1 class="title has-text-light has-text-weight-semibold" id="generatorName">The Simpsons
+                            Address</h1>
+                        <p class="is-size-5" id="description">Let's create a random, hilariously quirky address inspired
+                            by the world
+                            of
+                            <span class="has-text-weight-semibold">The Simpsons! 😎</span>
+                        </p>
+                        <hr>
+                        <div class="columns">
+                            <div class="column is-7">
+                                <div class="card mt-3" id="customDiv" style="background-color: #373952;">
+                                    <div
+                                        class="card-content has-text-centered has-text-light has-text-weight-semibold is-size-5">
+                                        <p>Homer Simpson</p>
+                                        <p>742 Evergreen Terrace</p>
+                                        <p>Springfield, Illinois, 49007</p>
+                                    </div>
+                                </div>
+
+                                <table class="table  is-fullwidth has-text-light" style="background-color: #13141e;">
+                                    <tbody>
+                                        <tr>
+                                            <td class="has-text-light">
+                                                <label class="checkbox has-text-grey-light">
+                                                    <input type="checkbox" id="name" checked> Name
+                                                </label>
+                                            </td>
+                                            <td class="has-text-light">
+                                                <label class="checkbox has-text-grey-light">
+                                                    <input type="checkbox" id="houseNo" checked> House No.
+                                                </label>
+                                            </td>
+                                            <td class="has-text-light">
+                                                <label class="checkbox has-text-grey-light">
+                                                    <input type="checkbox" id="streetName" checked> Street Name
+                                                </label>
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td class="has-text-light">
+                                                <label class="checkbox has-text-grey-light">
+                                                    <input type="checkbox" id="neighborhood" checked> Neighborhood
+                                                </label>
+                                            </td>
+                                            <td class="has-text-light">
+                                                <label class="checkbox has-text-grey-light">
+                                                    <input type="checkbox" id="zipCode" checked> Zip Code
+                                                </label>
+                                            </td>
+                                            <td class="has-text-light">
+                                                <label class="checkbox has-text-grey-light">
+                                                    <input type="checkbox" id="state" checked> State
+                                                </label>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="has-text-centered">
+                                    <button class="button mt-1 is-success has-text-light is-rounded"
+                                        onclick="generateAddresses(1,'customDiv')">Generate
+                                        New</button>
+                                </div>
+                            </div>
+                            <div class="column has-text-light">
+                                <div class="content">
+                                    <p class="is-size-5 has-text-weight-semibold">
+                                        Generate more like this and explore powerful features.
+                                    </p>
+
+                                    <ul>
+                                        <li>Generate unlimited random addresses quickly and efficiently.</li>
+                                        <li>Export addresses in multiple formats: JSON, CSV, Text, and XML,PDF</li>
+                                        <li>Customize address fields and sequence to fit your specific needs.</li>
+                                    </ul>
+                                </div>
+
+                                <div class="has-text-centered">
+                                    <button class="button is-medium  is-rounded mt-1" id="explore">
+                                        Explore Now &#8599
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Second Div -->
+            <div id="secondDiv" class="is-hidden">
+                <!-- Controllers -->
+                <h1 class="has-text-centered title has-text-light"
+                    style="font-family: 'Lobster', cursive; font-weight: 100;">
+                    The Simpsons
+                    Address
+                    Generator</h1>
+                <hr />
+                <div class="columns ">
+                    <div class="column is-2">
+                        <div class="field has-addons">
+                            <div class="control">
+                                <input id="inputRN" class="input has-text-centered has-text-weight-semibold is-info"
+                                    type="number" value="12" min="1" placeholder="Number">
+                            </div>
+                            <div class="control">
+                                <a class="button is-info is-outlined" onclick="generateAddresses()">
+                                    Generate
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="column is-6"> <!-- for data content-->
+                        <button class="mb-2 button is-rounded is-outlined is-warning" onclick="generateAddresses(2)">
+                            2 Addresses </button>
+                        <button class="mb-2 button is-rounded is-outlined is-warning" onclick="generateAddresses(5)">
+                            5
+                        </button>
+                        <button class="mb-2 button is-rounded is-outlined is-warning" onclick="generateAddresses(10)">
+                            10
+                        </button>
+                        <button class="mb-2 button is-rounded is-outlined is-warning" onclick="generateAddresses(15)">
+                            15
+                        </button>
+                        <button class="mb-2 button is-rounded is-outlined is-warning" onclick="generateAddresses(20)">
+                            20
+                        </button>
+                        <button class="mb-2 button is-rounded is-outlined is-warning" onclick="generateAddresses(25)">
+                            25
+                        </button>
+                        <button class="mb-2 button is-rounded is-outlined is-warning"
+                            onclick="generateAddresses('all')">
+                            All
+                        </button>
+                        <button class="mb-2 button is-rounded is-outlined is-warning"
+                            onclick="generateAddresses('random')">
+                            Random
+                        </button>
+                    </div>
+
+                    <!-- Button and input -->
+                    <div class="column is-flex is-justify-content-center">
+                        <div class="field has-addons">
+                            <div class="control">
+                                <div class="select is-success">
+                                    <select class=" has-text-weight-semibold " id="filetype">
+                                        <option value="TEXT">TEXT</option>
+                                        <option value="JSON">JSON</option>
+                                        <option value="XML">XML</option>
+                                        <option value="CSV">CSV</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="control">
+                                <button class="button has-text-white is-success" onclick="downloadAddresses()">
+                                    Download <svg class="svgicon ml-1">
+                                        <use href="#downloadIcon"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box" style="background-color: #13141e;">
+                    <div id="fieldsToShow" style="width:100%">
+                        <div class="columns is-align-items-center is-multiline">
+                            <div class="column">
+                                <table class="table  is-fullwidth has-text-light" style="background-color: #13141e;">
+                                    <tbody>
+                                        <tr>
+                                            <td class="has-text-light">
+                                                <label class="checkbox has-text-grey-light">
+                                                    <input type="checkbox" id="name" checked> Name
+                                                </label>
+                                            </td>
+                                            <td class="has-text-light">
+                                                <label class="checkbox has-text-grey-light">
+                                                    <input type="checkbox" id="houseNo" checked> House No.
+                                                </label>
+                                            </td>
+                                            <td class="has-text-light">
+                                                <label class="checkbox has-text-grey-light">
+                                                    <input type="checkbox" id="streetName" checked> Street Name
+                                                </label>
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td class="has-text-light">
+                                                <label class="checkbox has-text-grey-light">
+                                                    <input type="checkbox" id="neighborhood" checked> Neighborhood
+                                                </label>
+                                            </td>
+                                            <td class="has-text-light">
+                                                <label class="checkbox has-text-grey-light">
+                                                    <input type="checkbox" id="zipCode" checked> Zip Code
+                                                </label>
+                                            </td>
+                                            <td class="has-text-light">
+                                                <label class="checkbox has-text-grey-light">
+                                                    <input type="checkbox" id="state" checked> State
+                                                </label>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+                            <div class="column is-flex is-justify-content-center is-2 field has-addons">
+                                <div>
+                                    <p class="has-text-weight-semibold has-text-centered has-text-grey-light mt-2">State
+                                    </p>
+
+                                    <div class="select ml-2 is-rounded">
+                                        <select name="" id="selectState">
+                                            <option value="all">All</option>
+
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Showing Generated Address -->
+                    <div class="columns is-multiline" id="addressContainer">
+                        <div class="column is-3">
+                            <div class="card mt-3 cust-card" id="customDiv" style="background-color: #373952;">
+                                <div
+                                    class="card-content has-text-centered has-text-light has-text-weight-semibold is-size-5">
+                                    <div class="has-text-right">
+                                        <button class="button copy is-ghost copyButton" onclick="copyAddress(0)"
+                                            fdprocessedid="kq3snb">
+                                            <svg class="svgicon">
+                                                <use href="#iconButton"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+
+                                    <div id="address-0">
+                                        <p class="has-text-weight-semibold">Nelson Bouvier</p>
+                                        <p>
+                                            1001
+                                            Pinewood Drive
+                                        </p>
+                                        <p>
+                                            Springfield Glen,
+                                            Springfield
+                                            55055
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column is-3">
+                            <div class="card mt-3 cust-card" id="customDiv" style="background-color: #373952;">
+                                <div
+                                    class="card-content has-text-centered has-text-light has-text-weight-semibold is-size-5">
+                                    <div class="has-text-right">
+                                        <button class="button copy is-ghost copyButton" onclick="copyAddress(1)"
+                                            fdprocessedid="hwn1eh">
+                                            <svg class="svgicon">
+                                                <use href="#iconButton"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+
+                                    <div id="address-1">
+                                        <p class="has-text-weight-semibold">Luann Leonard</p>
+                                        <p>
+                                            6666
+                                            Main Street
+                                        </p>
+                                        <p>
+                                            Ogdenville,
+                                            Springfield
+                                            88888
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column is-3">
+                            <div class="card mt-3 cust-card" id="customDiv" style="background-color: #373952;">
+                                <div
+                                    class="card-content has-text-centered has-text-light has-text-weight-semibold is-size-5">
+                                    <div class="has-text-right">
+                                        <button class="button copy is-ghost copyButton" onclick="copyAddress(2)"
+                                            fdprocessedid="nzgacr">
+                                            <svg class="svgicon">
+                                                <use href="#iconButton"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+
+                                    <div id="address-2">
+                                        <p class="has-text-weight-semibold">Milhouse Flanders</p>
+                                        <p>
+                                            1010
+                                            Cherry Tree Lane
+                                        </p>
+                                        <p>
+                                            Squidport,
+                                            Springfield
+                                            77777
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column is-3">
+                            <div class="card mt-3 cust-card" id="customDiv" style="background-color: #373952;">
+                                <div
+                                    class="card-content has-text-centered has-text-light has-text-weight-semibold is-size-5">
+                                    <div class="has-text-right">
+                                        <button class="button copy is-ghost copyButton" onclick="copyAddress(3)"
+                                            fdprocessedid="n152li">
+                                            <svg class="svgicon">
+                                                <use href="#iconButton"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+
+                                    <div id="address-3">
+                                        <p class="has-text-weight-semibold">Nelson McClure</p>
+                                        <p>
+                                            205
+                                            Cherry Tree Lane
+                                        </p>
+                                        <p>
+                                            Capital City,
+                                            Springfield
+                                            55555
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column is-3">
+                            <div class="card mt-3 cust-card" id="customDiv" style="background-color: #373952;">
+                                <div
+                                    class="card-content has-text-centered has-text-light has-text-weight-semibold is-size-5">
+                                    <div class="has-text-right">
+                                        <button class="button copy is-ghost copyButton" onclick="copyAddress(4)"
+                                            fdprocessedid="o64bb">
+                                            <svg class="svgicon">
+                                                <use href="#iconButton"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+
+                                    <div id="address-4">
+                                        <p class="has-text-weight-semibold">Carl Quimby</p>
+                                        <p>
+                                            808
+                                            Sequoia Drive
+                                        </p>
+                                        <p>
+                                            West Shelbyville,
+                                            Springfield
+                                            60606
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column is-3">
+                            <div class="card mt-3 cust-card" id="customDiv" style="background-color: #373952;">
+                                <div
+                                    class="card-content has-text-centered has-text-light has-text-weight-semibold is-size-5">
+                                    <div class="has-text-right">
+                                        <button class="button copy is-ghost copyButton" onclick="copyAddress(5)"
+                                            fdprocessedid="qu6y1">
+                                            <svg class="svgicon">
+                                                <use href="#iconButton"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+
+                                    <div id="address-5">
+                                        <p class="has-text-weight-semibold">Marge Szyslak</p>
+                                        <p>
+                                            505
+                                            Sequoia Drive
+                                        </p>
+                                        <p>
+                                            West Shelbyville,
+                                            Springfield
+                                            24680
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column is-3">
+                            <div class="card mt-3 cust-card" id="customDiv" style="background-color: #373952;">
+                                <div
+                                    class="card-content has-text-centered has-text-light has-text-weight-semibold is-size-5">
+                                    <div class="has-text-right">
+                                        <button class="button copy is-ghost copyButton" onclick="copyAddress(6)"
+                                            fdprocessedid="awlk4p">
+                                            <svg class="svgicon">
+                                                <use href="#iconButton"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+
+                                    <div id="address-6">
+                                        <p class="has-text-weight-semibold">Marge Simpson</p>
+                                        <p>
+                                            404
+                                            Evergreen Terrace
+                                        </p>
+                                        <p>
+                                            Little Pwagmattasquarmsettport,
+                                            Springfield
+                                            44444
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column is-3">
+                            <div class="card mt-3 cust-card" id="customDiv" style="background-color: #373952;">
+                                <div
+                                    class="card-content has-text-centered has-text-light has-text-weight-semibold is-size-5">
+                                    <div class="has-text-right">
+                                        <button class="button copy is-ghost copyButton" onclick="copyAddress(7)"
+                                            fdprocessedid="2sibbh">
+                                            <svg class="svgicon">
+                                                <use href="#iconButton"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+
+                                    <div id="address-7">
+                                        <p class="has-text-weight-semibold">Homer Burns</p>
+                                        <p>
+                                            1001
+                                            Dogwood Drive
+                                        </p>
+                                        <p>
+                                            North Haverbrook,
+                                            Springfield
+                                            11111
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column is-3">
+                            <div class="card mt-3 cust-card" id="customDiv" style="background-color: #373952;">
+                                <div
+                                    class="card-content has-text-centered has-text-light has-text-weight-semibold is-size-5">
+                                    <div class="has-text-right">
+                                        <button class="button copy is-ghost copyButton" onclick="copyAddress(8)"
+                                            fdprocessedid="13cs0i">
+                                            <svg class="svgicon">
+                                                <use href="#iconButton"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+
+                                    <div id="address-8">
+                                        <p class="has-text-weight-semibold">Lenny Krabappel</p>
+                                        <p>
+                                            6666
+                                            Aspen Avenue
+                                        </p>
+                                        <p>
+                                            Shelbyville,
+                                            Springfield
+                                            11111
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column is-3">
+                            <div class="card mt-3 cust-card" id="customDiv" style="background-color: #373952;">
+                                <div
+                                    class="card-content has-text-centered has-text-light has-text-weight-semibold is-size-5">
+                                    <div class="has-text-right">
+                                        <button class="button copy is-ghost copyButton" onclick="copyAddress(9)"
+                                            fdprocessedid="dte70h">
+                                            <svg class="svgicon">
+                                                <use href="#iconButton"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+
+                                    <div id="address-9">
+                                        <p class="has-text-weight-semibold">Bart Bouvier</p>
+                                        <p>
+                                            3333
+                                            Maple Avenue
+                                        </p>
+                                        <p>
+                                            Springfield,
+                                            Springfield
+                                            00042
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column is-3">
+                            <div class="card mt-3 cust-card" id="customDiv" style="background-color: #373952;">
+                                <div
+                                    class="card-content has-text-centered has-text-light has-text-weight-semibold is-size-5">
+                                    <div class="has-text-right">
+                                        <button class="button copy is-ghost copyButton" onclick="copyAddress(10)"
+                                            fdprocessedid="s1089h">
+                                            <svg class="svgicon">
+                                                <use href="#iconButton"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+
+                                    <div id="address-10">
+                                        <p class="has-text-weight-semibold">Bart Simpson</p>
+                                        <p>
+                                            456
+                                            Oak Grove Lane
+                                        </p>
+                                        <p>
+                                            North Haverbrook,
+                                            Springfield
+                                            67890
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column is-3">
+                            <div class="card mt-3 cust-card" id="customDiv" style="background-color: #373952;">
+                                <div
+                                    class="card-content has-text-centered has-text-light has-text-weight-semibold is-size-5">
+                                    <div class="has-text-right">
+                                        <button class="button copy is-ghost copyButton" onclick="copyAddress(11)"
+                                            fdprocessedid="peel5j">
+                                            <svg class="svgicon">
+                                                <use href="#iconButton"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+
+                                    <div id="address-11">
+                                        <p class="has-text-weight-semibold">Ned Hutz</p>
+                                        <p>
+                                            742
+                                            Dogwood Drive
+                                        </p>
+                                        <p>
+                                            East Springfield,
+                                            Springfield
+                                            67890
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Count -->
+                    <div class="has-text-centered p-3" style="border-radius: 8px;">
+                        <h3 class="is-size-3 has-text-grey-light"
+                            style="font-family: 'Lobster', cursive; font-weight: 100;" id="count">
+                            <span class="is-size-3 has-text-success" id="generatedCount">12</span>
+                            Addresses Generated
+                        </h3>
+                    </div>
+
+                    <div class="content is-size-5 is-hidden">
+                        <h2>Address Generator</h1>
+                            <p>
+                                Random Address Generator provides very useful tools to generate random addresses
+                                with
+                                advance
+                                configurations such as select the state, show or hide the address field, download in
+                                multiple
+                                format.
+                            </p>
+                            <p>
+                                This is very powerfull, easy to use utility which generate realistic addresss for
+                                various
+                                applications. Developer, Tester or Students loves this tool to generate mock
+                                address.
+                            </p>
+                            <h3>Advantages</h3>
+
+                            <ul>
+                                <li>Data Fields : It generate address with Name, Surname, phone numbers, street
+                                    name,
+                                    city ,
+                                    state
+                                    and zip code.</li>
+                                <li>Customization : While generating address, user can choose which fields needs to
+                                    be
+                                    generated
+                                    along wiht how many address user wants to generate.</li>
+                                <li>Output Format: It helps to generate txt , JSON or XML format output which make
+                                    this
+                                    tool
+                                    very
+                                    unique.</li>
+                                <li>Versatile Use Cases: It saves time in test cases scenario which users need to
+                                    have
+                                    tons of
+                                    address to generate.</li>
+                                <li>Easy-to-Use: We make this tool very easy to use, by just selecting option and
+                                    click
+                                    on
+                                    generate.
+                                </li>
+                                <li>Efficiency : It generate address very fast, and we make sure each address are
+                                    unique
+                                    and
+                                    based
+                                    on the option user has selected.</li>
+                            </ul>
+                    </div>
+                </div>
+                <hr />
+            </div>
+            <footer class="footer pb-3">
+                <div class="box is-hidden"
+                    style="width: 90%;margin-left: auto;margin-right: auto;background-color: #13141e;">
+                    <h2 class="is-size-4 has-text-weight-semibold has-text-centered has-text-light">Enjoying <span
+                            class="has-text-primary">
+                            The Simpsons Address</span> ?</h2>
+                    <p class="has-text-centered is-size-5">Share it with your friends and let them join the fun of
+                        generating random
+                        addresses
+                        effortlessly!</p>
+                    <hr />
+                </div>
+                <div class="content has-text-centered">
+                    <h2 class="has-text-weight-semibold has-text-light"
+                        style="font-family: 'Lobster', cursive; font-weight: 100;">
+                        Creative Addresses Generator</h2>
+                </div>
+
+                <strong>
+                    <p class="has-text-centered is-size-5" id="copyright">Made with ❤️ & 🍵 for you.. </p>
+                    <p class="has-text-centered is-size-5" id="copyright">Copyright © AddressGenerator 2024 | v0.0
+                    </p>
+                </strong>
+            </footer>
+
+        </div>
+    </section>
+    <script src="./index.js"></script>
+
+    <!-- SVG's -->
+    <div class="is-hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" id="downloadIcon" height="24px" viewBox="0 -960 960 960" width="24px"
+            fill="#FFFFFF">
+            <path
+                d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z" />
+        </svg>
+
+        <svg id="iconButton" viewBox="0 -960 960 960" fill="#5f6368">
+            <path
+                d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360Zm0-80h360v-480H360v480ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Zm160-240v-480 480Z" />
+        </svg>
+    </div>
+
+    <!-- Notification -->
+    <div class="notification nf is-success is-hidden"
+        style="position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);" id="message">
+        <p class="has-text-light has-text-weight-semibold is-size-5">Content copied to clipboard
+            successfully!</p>
+    </div>
+</body>
+
+</html>

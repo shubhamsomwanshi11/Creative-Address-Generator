@@ -1,0 +1,20 @@
+.svgicon {
+    width: 24px;
+    height: 24px;
+}
+
+.navbar,
+body,
+.footer {
+    background-color: #0c0d14 !important;
+}
+
+.cust-card {
+    height: 100%;
+}
+
+.copy {
+    position: absolute;
+    top: 5px;
+    right: 0px;
+}

@@ -1,0 +1,64 @@
+{
+    "generator": "Hogwarts House Address Generator",
+    "description": "Generates random addresses based on the Hogwarts School of Witchcraft and Wizardry houses.",
+    "components": {
+      "houseNumbers": [
+        1, 9, 12, 15, 20, 25, 33, 50, 100, 200, 404, 505, 777, 999, 1500, 2020, 3030, 4040, 5050, 6666
+      ],
+      "streetNames": [
+        "Gryffindor Lane",
+        "Hufflepuff Avenue",
+        "Ravenclaw Road",
+        "Slytherin Street",
+        "Diagon Alley",
+        "Leaky Cauldron Way",
+        "Hogwarts Express Avenue",
+        "The Three Broomsticks Lane",
+        "Godric's Hollow Path",
+        "Privet Drive",
+        "The Burrow Road",
+        "Forbidden Forest Trail",
+        "Hogsmeade Crescent",
+        "Hogwarts Castle Drive",
+        "Dumbledore's Way",
+        "Weasley's Wizard Wheezes Lane",
+        "Room of Requirement Street",
+        "Flitwick Square",
+        "The Shrieking Shack Lane",
+        "Knockturn Alley"
+      ],
+      "neighborhoods": [
+        "Hogwarts Castle",
+        "Hogsmeade Village",
+        "Diagon Alley",
+        "Godric's Hollow",
+        "The Burrow",
+        "The Forbidden Forest",
+        "Hogwarts Grounds",
+        "Privet Drive",
+        "The Leaky Cauldron",
+        "Kings Cross Station",
+        "Number 12 Grimmauld Place",
+        "The Shrieking Shack",
+        "Little Whinging",
+        "Knockturn Alley",
+        "Spinner's End",
+        "Grimmauld Square",
+        "The Chamber of Secrets",
+        "The Astronomy Tower",
+        "The Quidditch Pitch",
+        "The Great Hall"
+      ],
+      "zipCodes": [
+        "00001", "12345", "67890", "00042", "98765", "33333", "11111", "20202",
+        "55555", "66666", "77777", "88888", "99999", "40000", "50505", "60606",
+        "10101", "22222", "30303", "44444"
+      ],
+      "states": [
+        "Scotland",
+        "Magical Britain",
+        "Hogwarts"
+      ]
+    }
+  }
+  

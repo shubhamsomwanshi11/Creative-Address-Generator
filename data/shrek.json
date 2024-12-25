@@ -1,0 +1,67 @@
+{
+    "generator": "Shrek’s Swamp Address Generator",
+    "description": "Generates random addresses inspired by the world of Shrek, including locations from the swamp to Farquaad's kingdom.",
+    "components": {
+      "houseNumbers": [
+        1, 3, 5, 7, 12, 15, 25, 50, 75, 100, 200, 404, 505, 666, 777, 888, 999, 1234, 2020, 3030
+      ],
+      "streetNames": [
+        "Shrek's Swamp Road",
+        "Farquaad Avenue",
+        "Donkey Lane",
+        "Dragon's Rest Road",
+        "Puss in Boots Way",
+        "Ogre's Path",
+        "Fiona's Castle Drive",
+        "Duloc Boulevard",
+        "The Magic Mirror Street",
+        "The Gingerbread Man Trail",
+        "The Donkey's Den Road",
+        "Lord Farquaad's Way",
+        "Shrek's Hut Lane",
+        "Fairy Godmother Crescent",
+        "Fiona's Garden Path",
+        "The Three Little Pigs Street",
+        "The Muffin Man Lane",
+        "The Farquaad Gate Avenue",
+        "The Princess Tower Road",
+        "Shrek's Rescue Path"
+      ],
+      "neighborhoods": [
+        "Shrek's Swamp",
+        "Duloc",
+        "The Ogre's Lair",
+        "Fiona's Kingdom",
+        "Donkey's Dreamworld",
+        "Dragon's Cave",
+        "The Fairy Tale Forest",
+        "The Gingerbread Village",
+        "The Royal Castle",
+        "The Puss in Boots Lair",
+        "The Shrek Cottage",
+        "The Magic Mirror Palace",
+        "The Three Blind Mice Manor",
+        "The Princess Tower",
+        "The Witch's Hut",
+        "The Enchanted Forest",
+        "The Farquaad Kingdom",
+        "The Dragon's Den",
+        "The Fairy Godmother's Mansion",
+        "The Muffin Man's Bakery"
+      ],
+      "zipCodes": [
+        "00001", "12345", "67890", "11223", "33333", "55555", "66666", "77777",
+        "10101", "20202", "30303", "40404", "50505", "60606", "70707", "80808",
+        "90909", "11111", "12121", "30330"
+      ],
+      "states": [
+        "Duloc",
+        "Swamp",
+        "Kingdom of Farquaad",
+        "Ogre's Realm",
+        "Fairy Tale Kingdom",
+        "The Enchanted Woods"
+      ]
+    }
+  }
+  

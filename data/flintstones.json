@@ -1,0 +1,65 @@
+{
+    "generator": "Flintstones Address Generator",
+    "description": "Generates random addresses inspired by locations in the prehistoric world of The Flintstones.",
+    "components": {
+      "houseNumbers": [
+        1, 2, 3, 10, 12, 20, 25, 50, 100, 150, 200, 300, 404, 555, 666, 707, 808, 909, 1010, 2020
+      ],
+      "streetNames": [
+        "Cobblestone Way",
+        "Rock Quarry Road",
+        "Bedrock Avenue",
+        "Dinosaur Trail",
+        "Stone Age Lane",
+        "Pebble Path",
+        "Mammoth Street",
+        "Granite Boulevard",
+        "Slate Drive",
+        "Boulder Road",
+        "Tyranno Trail",
+        "Rubble Street",
+        "Fred Flintstone Avenue",
+        "Barney Rubble Road",
+        "Dino Lane",
+        "Sabretooth Circle",
+        "Cave Path",
+        "Pterodactyl Drive",
+        "Fossil Way",
+        "Prehistoric Park Lane"
+      ],
+      "neighborhoods": [
+        "Bedrock",
+        "Rockville",
+        "Granite Town",
+        "Pebble Beach",
+        "Quarryville",
+        "Slate City",
+        "Mammoth Park",
+        "Fossil Valley",
+        "Rubble Ridge",
+        "Stonewall",
+        "Dino's Den",
+        "Sabretooth Heights",
+        "Boulder Creek",
+        "Cave Canyon",
+        "Stone Age Estates",
+        "Jurassic Hills",
+        "Rocky Flats",
+        "Prehistoric Pointe",
+        "Stonewood",
+        "Slate Quarry"
+      ],
+      "zipCodes": [
+        "00001", "12345", "56789", "00042", "11111", "22222", "33333", "44444",
+        "55555", "66666", "77777", "88888", "99999", "10101", "20202", "30303",
+        "40404", "50505", "60606", "70707"
+      ],
+      "states": [
+        "Stone Age",
+        "Jurassic Zone",
+        "Prehistoric Plains",
+        "Granite Hills"
+      ]
+    }
+  }
+  
