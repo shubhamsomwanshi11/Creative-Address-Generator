@@ -4,41 +4,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Creative Address Generator</title>
+    <title>Gontham Address Generator</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
     <section class="section">
         <div id="mainBox">
-            <input type="text" value="simpson" class="input is-hidden" id="generatorDName" />
-
+            <input type="text" value="gontham" class="input is-hidden" id="generatorDName" />
             <!-- First Div -->
             <div id="template" class="columns  is-flex-desktop-only is-align-items-center">
                 <div class="column is-4">
                     <figure class="image" style="margin: auto;">
-                        <img class="" style="border-radius:8px ;" src="/assets/simpsons.png" />
+                        <img class="" style="border-radius:8px ;" src="/assets/gontham.png" />
                     </figure>
                 </div>
                 <div class="column">
                     <div class="box" style="background-color: #13141e;">
-                        <h1 class="title has-text-light has-text-weight-semibold" id="generatorName">The Simpsons
+                        <h1 class="title has-text-light has-text-weight-semibold" id="generatorName">Gontham City
                             Address</h1>
-                        <p class="is-size-5" id="description">Let's create a random, hilariously quirky address inspired
-                            by the world
-                            of
-                            <span class="has-text-weight-semibold">The Simpsons! 😎</span>
+                        <p class="is-size-5" id="description">Generates random addresses inspired by the world of Gotham
+                            City in the <span class='has-text-weight-semibold'>DC Universe! 🦇</span>
                         </p>
                         <hr>
                         <div class="columns">
                             <div class="column is-7">
-                                <div class="card mt-3" id="customDiv" style="background-color: #373952;">
-                                    <div
-                                        class="card-content has-text-centered has-text-light has-text-weight-semibold is-size-5">
-                                        <p>Homer Simpson</p>
-                                        <p>742 Evergreen Terrace</p>
-                                        <p>Springfield, Illinois, 49007</p>
+                                <div class="column  ">
+                                    <div class="card cust-card mt-3" id="customDiv" style="background-color: #373952;">
+                                        <div
+                                            class="card-content has-text-centered has-text-light has-text-weight-semibold is-size-5">
+                                            <div class="has-text-right">
+                                                <button class="button copy is-ghost copyButton" onclick="copyAddress(0)"
+                                                    fdprocessedid="ov248o">
+                                                    <svg class="svgicon">
+                                                        <use href="#iconButton"></use>
+                                                    </svg>
+                                                </button>
+                                            </div>
+
+                                            <div id="address-0">
+                                                <p class="has-text-weight-semibold">Oswald Quinzel</p>
+                                                <p>
+                                                    3030
+                                                    Scarecrow Way
+                                                </p>
+                                                <p>
+                                                    Chinatown,
+                                                    New Jersey
+                                                    67890
+                                                </p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
 
@@ -116,7 +133,7 @@
                 <!-- Controllers -->
                 <h1 class="has-text-centered title has-text-light"
                     style="font-family: 'Lobster', cursive; font-weight: 100;" id="generatorName2">
-                    Gontham City
+                    Gontham
                     Address
                     Generator</h1>
                 <hr />
@@ -250,13 +267,13 @@
 
                     <!-- Showing Generated Address -->
                     <div class="columns is-multiline" id="addressContainer">
-                        <div class="column is-3 ">
-                            <div class="card cust-card mt-3" id="customDiv" style="background-color: #373952;">
+                        <div class="column is-3">
+                            <div class="card mt-3 cust-card" id="customDiv" style="background-color: #373952;">
                                 <div
                                     class="card-content has-text-centered has-text-light has-text-weight-semibold is-size-5">
                                     <div class="has-text-right">
                                         <button class="button copy is-ghost copyButton" onclick="copyAddress(0)"
-                                            fdprocessedid="0nuj9a">
+                                            fdprocessedid="kq3snb">
                                             <svg class="svgicon">
                                                 <use href="#iconButton"></use>
                                             </svg>
@@ -264,27 +281,27 @@
                                     </div>
 
                                     <div id="address-0">
-                                        <p class="has-text-weight-semibold">Lucius Zsasz</p>
+                                        <p class="has-text-weight-semibold">Nelson Bouvier</p>
                                         <p>
-                                            200
-                                            Scarecrow Way
+                                            1001
+                                            Pinewood Drive
                                         </p>
                                         <p>
-                                            Miagani Island,
-                                            New Jersey
-                                            90909
+                                            Springfield Glen,
+                                            Springfield
+                                            55055
                                         </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="column is-3 ">
-                            <div class="card cust-card mt-3" id="customDiv" style="background-color: #373952;">
+                        <div class="column is-3">
+                            <div class="card mt-3 cust-card" id="customDiv" style="background-color: #373952;">
                                 <div
                                     class="card-content has-text-centered has-text-light has-text-weight-semibold is-size-5">
                                     <div class="has-text-right">
                                         <button class="button copy is-ghost copyButton" onclick="copyAddress(1)"
-                                            fdprocessedid="bohyi6">
+                                            fdprocessedid="hwn1eh">
                                             <svg class="svgicon">
                                                 <use href="#iconButton"></use>
                                             </svg>
@@ -292,27 +309,27 @@
                                     </div>
 
                                     <div id="address-1">
-                                        <p class="has-text-weight-semibold">Renee Nigma</p>
+                                        <p class="has-text-weight-semibold">Luann Leonard</p>
                                         <p>
-                                            25
-                                            Crime Alley
+                                            6666
+                                            Main Street
                                         </p>
                                         <p>
-                                            Tricorner Yards,
-                                            New Jersey
-                                            44444
+                                            Ogdenville,
+                                            Springfield
+                                            88888
                                         </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="column is-3 ">
-                            <div class="card cust-card mt-3" id="customDiv" style="background-color: #373952;">
+                        <div class="column is-3">
+                            <div class="card mt-3 cust-card" id="customDiv" style="background-color: #373952;">
                                 <div
                                     class="card-content has-text-centered has-text-light has-text-weight-semibold is-size-5">
                                     <div class="has-text-right">
                                         <button class="button copy is-ghost copyButton" onclick="copyAddress(2)"
-                                            fdprocessedid="r0lsz5">
+                                            fdprocessedid="nzgacr">
                                             <svg class="svgicon">
                                                 <use href="#iconButton"></use>
                                             </svg>
@@ -320,27 +337,27 @@
                                     </div>
 
                                     <div id="address-2">
-                                        <p class="has-text-weight-semibold">Harvey Zsasz</p>
+                                        <p class="has-text-weight-semibold">Milhouse Flanders</p>
                                         <p>
-                                            25
-                                            Cobblepot Lane
+                                            1010
+                                            Cherry Tree Lane
                                         </p>
                                         <p>
-                                            Robinson Park,
-                                            East Coast Metropolis Region
-                                            00042
+                                            Squidport,
+                                            Springfield
+                                            77777
                                         </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="column is-3 ">
-                            <div class="card cust-card mt-3" id="customDiv" style="background-color: #373952;">
+                        <div class="column is-3">
+                            <div class="card mt-3 cust-card" id="customDiv" style="background-color: #373952;">
                                 <div
                                     class="card-content has-text-centered has-text-light has-text-weight-semibold is-size-5">
                                     <div class="has-text-right">
                                         <button class="button copy is-ghost copyButton" onclick="copyAddress(3)"
-                                            fdprocessedid="w90fq">
+                                            fdprocessedid="n152li">
                                             <svg class="svgicon">
                                                 <use href="#iconButton"></use>
                                             </svg>
@@ -348,27 +365,27 @@
                                     </div>
 
                                     <div id="address-3">
-                                        <p class="has-text-weight-semibold">Selina Fox</p>
+                                        <p class="has-text-weight-semibold">Nelson McClure</p>
                                         <p>
-                                            100
-                                            Blackgate Boulevard
+                                            205
+                                            Cherry Tree Lane
                                         </p>
                                         <p>
-                                            Old Gotham,
-                                            Gotham State
-                                            11111
+                                            Capital City,
+                                            Springfield
+                                            55555
                                         </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="column is-3 ">
-                            <div class="card cust-card mt-3" id="customDiv" style="background-color: #373952;">
+                        <div class="column is-3">
+                            <div class="card mt-3 cust-card" id="customDiv" style="background-color: #373952;">
                                 <div
                                     class="card-content has-text-centered has-text-light has-text-weight-semibold is-size-5">
                                     <div class="has-text-right">
                                         <button class="button copy is-ghost copyButton" onclick="copyAddress(4)"
-                                            fdprocessedid="dn2m3">
+                                            fdprocessedid="o64bb">
                                             <svg class="svgicon">
                                                 <use href="#iconButton"></use>
                                             </svg>
@@ -376,27 +393,27 @@
                                     </div>
 
                                     <div id="address-4">
-                                        <p class="has-text-weight-semibold">Harvey Dent</p>
+                                        <p class="has-text-weight-semibold">Carl Quimby</p>
                                         <p>
-                                            66
-                                            Diamond District Lane
+                                            808
+                                            Sequoia Drive
                                         </p>
                                         <p>
-                                            East End,
-                                            New Jersey
-                                            10001
+                                            West Shelbyville,
+                                            Springfield
+                                            60606
                                         </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="column is-3 ">
-                            <div class="card cust-card mt-3" id="customDiv" style="background-color: #373952;">
+                        <div class="column is-3">
+                            <div class="card mt-3 cust-card" id="customDiv" style="background-color: #373952;">
                                 <div
                                     class="card-content has-text-centered has-text-light has-text-weight-semibold is-size-5">
                                     <div class="has-text-right">
                                         <button class="button copy is-ghost copyButton" onclick="copyAddress(5)"
-                                            fdprocessedid="0a8fr">
+                                            fdprocessedid="qu6y1">
                                             <svg class="svgicon">
                                                 <use href="#iconButton"></use>
                                             </svg>
@@ -404,27 +421,27 @@
                                     </div>
 
                                     <div id="address-5">
-                                        <p class="has-text-weight-semibold">Jonathan Kyle</p>
+                                        <p class="has-text-weight-semibold">Marge Szyslak</p>
                                         <p>
-                                            404
-                                            Robinson Park Trail
+                                            505
+                                            Sequoia Drive
                                         </p>
                                         <p>
-                                            Gotham Heights,
-                                            New Jersey
-                                            11223
+                                            West Shelbyville,
+                                            Springfield
+                                            24680
                                         </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="column is-3 ">
-                            <div class="card cust-card mt-3" id="customDiv" style="background-color: #373952;">
+                        <div class="column is-3">
+                            <div class="card mt-3 cust-card" id="customDiv" style="background-color: #373952;">
                                 <div
                                     class="card-content has-text-centered has-text-light has-text-weight-semibold is-size-5">
                                     <div class="has-text-right">
                                         <button class="button copy is-ghost copyButton" onclick="copyAddress(6)"
-                                            fdprocessedid="bsthkj">
+                                            fdprocessedid="awlk4p">
                                             <svg class="svgicon">
                                                 <use href="#iconButton"></use>
                                             </svg>
@@ -432,27 +449,27 @@
                                     </div>
 
                                     <div id="address-6">
-                                        <p class="has-text-weight-semibold">Pamela Maroni</p>
+                                        <p class="has-text-weight-semibold">Marge Simpson</p>
                                         <p>
-                                            1010
-                                            Narrows Street
+                                            404
+                                            Evergreen Terrace
                                         </p>
                                         <p>
-                                            Tricorner Yards,
-                                            New Jersey
-                                            30303
+                                            Little Pwagmattasquarmsettport,
+                                            Springfield
+                                            44444
                                         </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="column is-3 ">
-                            <div class="card cust-card mt-3" id="customDiv" style="background-color: #373952;">
+                        <div class="column is-3">
+                            <div class="card mt-3 cust-card" id="customDiv" style="background-color: #373952;">
                                 <div
                                     class="card-content has-text-centered has-text-light has-text-weight-semibold is-size-5">
                                     <div class="has-text-right">
                                         <button class="button copy is-ghost copyButton" onclick="copyAddress(7)"
-                                            fdprocessedid="nd9d8o">
+                                            fdprocessedid="2sibbh">
                                             <svg class="svgicon">
                                                 <use href="#iconButton"></use>
                                             </svg>
@@ -460,27 +477,27 @@
                                     </div>
 
                                     <div id="address-7">
-                                        <p class="has-text-weight-semibold">Harleen Falcone</p>
+                                        <p class="has-text-weight-semibold">Homer Burns</p>
                                         <p>
-                                            13
-                                            Crime Alley
+                                            1001
+                                            Dogwood Drive
                                         </p>
                                         <p>
-                                            The Narrows,
-                                            Gotham State
-                                            88888
+                                            North Haverbrook,
+                                            Springfield
+                                            11111
                                         </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="column is-3 ">
-                            <div class="card cust-card mt-3" id="customDiv" style="background-color: #373952;">
+                        <div class="column is-3">
+                            <div class="card mt-3 cust-card" id="customDiv" style="background-color: #373952;">
                                 <div
                                     class="card-content has-text-centered has-text-light has-text-weight-semibold is-size-5">
                                     <div class="has-text-right">
                                         <button class="button copy is-ghost copyButton" onclick="copyAddress(8)"
-                                            fdprocessedid="ehn8rs">
+                                            fdprocessedid="13cs0i">
                                             <svg class="svgicon">
                                                 <use href="#iconButton"></use>
                                             </svg>
@@ -488,27 +505,27 @@
                                     </div>
 
                                     <div id="address-8">
-                                        <p class="has-text-weight-semibold">Alfred Cobblepot</p>
+                                        <p class="has-text-weight-semibold">Lenny Krabappel</p>
                                         <p>
-                                            200
-                                            Gotham Heights Road
+                                            6666
+                                            Aspen Avenue
                                         </p>
                                         <p>
-                                            The Narrows,
-                                            Gotham State
-                                            20202
+                                            Shelbyville,
+                                            Springfield
+                                            11111
                                         </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="column is-3 ">
-                            <div class="card cust-card mt-3" id="customDiv" style="background-color: #373952;">
+                        <div class="column is-3">
+                            <div class="card mt-3 cust-card" id="customDiv" style="background-color: #373952;">
                                 <div
                                     class="card-content has-text-centered has-text-light has-text-weight-semibold is-size-5">
                                     <div class="has-text-right">
                                         <button class="button copy is-ghost copyButton" onclick="copyAddress(9)"
-                                            fdprocessedid="3jre96">
+                                            fdprocessedid="dte70h">
                                             <svg class="svgicon">
                                                 <use href="#iconButton"></use>
                                             </svg>
@@ -516,27 +533,27 @@
                                     </div>
 
                                     <div id="address-9">
-                                        <p class="has-text-weight-semibold">Bruce Napier</p>
+                                        <p class="has-text-weight-semibold">Bart Bouvier</p>
                                         <p>
-                                            100
-                                            Gotham Heights Road
+                                            3333
+                                            Maple Avenue
                                         </p>
                                         <p>
-                                            Otisburg,
-                                            Gotham State
-                                            55555
+                                            Springfield,
+                                            Springfield
+                                            00042
                                         </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="column is-3 ">
-                            <div class="card cust-card mt-3" id="customDiv" style="background-color: #373952;">
+                        <div class="column is-3">
+                            <div class="card mt-3 cust-card" id="customDiv" style="background-color: #373952;">
                                 <div
                                     class="card-content has-text-centered has-text-light has-text-weight-semibold is-size-5">
                                     <div class="has-text-right">
                                         <button class="button copy is-ghost copyButton" onclick="copyAddress(10)"
-                                            fdprocessedid="o4mkwh">
+                                            fdprocessedid="s1089h">
                                             <svg class="svgicon">
                                                 <use href="#iconButton"></use>
                                             </svg>
@@ -544,27 +561,27 @@
                                     </div>
 
                                     <div id="address-10">
-                                        <p class="has-text-weight-semibold">Alfred Wayne</p>
+                                        <p class="has-text-weight-semibold">Bart Simpson</p>
                                         <p>
-                                            1212
-                                            Blackgate Boulevard
+                                            456
+                                            Oak Grove Lane
                                         </p>
                                         <p>
-                                            Bleake Island,
-                                            East Coast Metropolis Region
-                                            55555
+                                            North Haverbrook,
+                                            Springfield
+                                            67890
                                         </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="column is-3 ">
-                            <div class="card cust-card mt-3" id="customDiv" style="background-color: #373952;">
+                        <div class="column is-3">
+                            <div class="card mt-3 cust-card" id="customDiv" style="background-color: #373952;">
                                 <div
                                     class="card-content has-text-centered has-text-light has-text-weight-semibold is-size-5">
                                     <div class="has-text-right">
                                         <button class="button copy is-ghost copyButton" onclick="copyAddress(11)"
-                                            fdprocessedid="bakd3o">
+                                            fdprocessedid="peel5j">
                                             <svg class="svgicon">
                                                 <use href="#iconButton"></use>
                                             </svg>
@@ -572,15 +589,15 @@
                                     </div>
 
                                     <div id="address-11">
-                                        <p class="has-text-weight-semibold">Zsasz Wayne</p>
+                                        <p class="has-text-weight-semibold">Ned Hutz</p>
                                         <p>
-                                            2525
-                                            Crime Alley
+                                            742
+                                            Dogwood Drive
                                         </p>
                                         <p>
-                                            Bristol Township,
-                                            Gotham State
-                                            30303
+                                            East Springfield,
+                                            Springfield
+                                            67890
                                         </p>
                                     </div>
                                 </div>
@@ -651,21 +668,21 @@
             <footer class="footer pb-3">
 
  <div class="buttons mt-4">
-                    <a href="pages/dragon-ball.html" class="button is-dark">Dragon Ball Address</a>
-                    <a href="pages/flintstones.html" class="button is-dark">Flintstones Address</a>
-                    <a href="pages/gontham.html" class="button is-dark">Gontham Address</a>
-                    <a href="pages/hogwarts-house.html" class="button is-dark">Hogwarts House Address</a>
-                    <a href="pages/hogwarts.html" class="button is-dark">Hogwarts Address</a>
-                    <a href="pages/marvel.html" class="button is-dark">Marvel Address</a>
-                    <a href="pages/mickey-mouse.html" class="button is-dark">Mickey Mouse Address</a>
-                    <a href="pages/scooby-doo.html" class="button is-dark">Scooby Doo Address</a>
-                    <a href="pages/shrek.html" class="button is-dark">Shrek Address</a>
-                    <a href="pages/simpsons.html" class="button is-dark">Simpsons Address</a>
-                    <a href="pages/start-wars.html" class="button is-dark">Star Wars Address</a>
-                    <a href="pages/willy-wonka.html" class="button is-dark">Willy Wonka Address</a>
-                    <a href="pages/zootopia.html" class="button is-dark">Zootopia Address</a>
+                    <a href="dragon-ball.html" class="button is-dark">Dragon Ball Address</a>
+                    <a href="flintstones.html" class="button is-dark">Flintstones Address</a>
+                    <a href="gontham.html" class="button is-dark">Gontham Address</a>
+                    <a href="hogwarts-house.html" class="button is-dark">Hogwarts House Address</a>
+                    <a href="hogwarts.html" class="button is-dark">Hogwarts Address</a>
+                    <a href="marvel.html" class="button is-dark">Marvel Address</a>
+                    <a href="mickey-mouse.html" class="button is-dark">Mickey Mouse Address</a>
+                    <a href="scooby-doo.html" class="button is-dark">Scooby Doo Address</a>
+                    <a href="shrek.html" class="button is-dark">Shrek Address</a>
+                    <a href="simpsons.html" class="button is-dark">Simpsons Address</a>
+                    <a href="start-wars.html" class="button is-dark">Star Wars Address</a>
+                    <a href="willy-wonka.html" class="button is-dark">Willy Wonka Address</a>
+                    <a href="zootopia.html" class="button is-dark">Zootopia Address</a>
                 </div>
-               
+
                 <div class="content has-text-centered">
                     <h2 class="has-text-weight-semibold has-text-light"
                         style="font-family: 'Lobster', cursive; font-weight: 100;">
@@ -681,7 +698,7 @@
 
         </div>
     </section>
-    <script src="./index.js"></script>
+    <script src="../index.js"></script>
 
     <!-- SVG's -->
     <div class="is-hidden">

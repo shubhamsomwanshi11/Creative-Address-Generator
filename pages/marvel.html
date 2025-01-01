@@ -4,31 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Creative Address Generator</title>
+    <title>Marvel Address Generator</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
     <section class="section">
         <div id="mainBox">
-            <input type="text" value="simpson" class="input is-hidden" id="generatorDName" />
-
+            <input type="text" value="marvel" class="input is-hidden" id="generatorDName" />
             <!-- First Div -->
             <div id="template" class="columns  is-flex-desktop-only is-align-items-center">
                 <div class="column is-4">
                     <figure class="image" style="margin: auto;">
-                        <img class="" style="border-radius:8px ;" src="/assets/simpsons.png" />
+                        <img class="" style="border-radius:8px ;" src="/assets/marvel.png" />
                     </figure>
                 </div>
                 <div class="column">
                     <div class="box" style="background-color: #13141e;">
-                        <h1 class="title has-text-light has-text-weight-semibold" id="generatorName">The Simpsons
-                            Address</h1>
-                        <p class="is-size-5" id="description">Let's create a random, hilariously quirky address inspired
-                            by the world
-                            of
-                            <span class="has-text-weight-semibold">The Simpsons! 😎</span>
+                        <h1 class="title has-text-light has-text-weight-semibold" id="generatorName">Marvel Address
+                            Generator</h1>
+                        <p class="is-size-5" id="description">Generates random addresses based on locations in the
+                            Marvel Universe.
                         </p>
                         <hr>
                         <div class="columns">
@@ -36,9 +33,27 @@
                                 <div class="card mt-3" id="customDiv" style="background-color: #373952;">
                                     <div
                                         class="card-content has-text-centered has-text-light has-text-weight-semibold is-size-5">
-                                        <p>Homer Simpson</p>
-                                        <p>742 Evergreen Terrace</p>
-                                        <p>Springfield, Illinois, 49007</p>
+                                        <div class="has-text-right">
+                                            <button class="button copy is-ghost copyButton" onclick="copyAddress(0)"
+                                                fdprocessedid="zmps5a">
+                                                <svg class="svgicon">
+                                                    <use href="#iconButton"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+
+                                        <div id="address-0">
+                                            <p class="has-text-weight-semibold">Clint Maximoff</p>
+                                            <p>
+                                                999
+                                                Avengers Tower Way
+                                            </p>
+                                            <p>
+                                                The Savage Land,
+                                                Wakanda
+                                                66666
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
 
@@ -116,9 +131,7 @@
                 <!-- Controllers -->
                 <h1 class="has-text-centered title has-text-light"
                     style="font-family: 'Lobster', cursive; font-weight: 100;" id="generatorName2">
-                    Gontham City
-                    Address
-                    Generator</h1>
+                    Marvel Address Generator</h1>
                 <hr />
                 <div class="columns ">
                     <div class="column is-2">
@@ -256,7 +269,7 @@
                                     class="card-content has-text-centered has-text-light has-text-weight-semibold is-size-5">
                                     <div class="has-text-right">
                                         <button class="button copy is-ghost copyButton" onclick="copyAddress(0)"
-                                            fdprocessedid="0nuj9a">
+                                            fdprocessedid="o5pvcr">
                                             <svg class="svgicon">
                                                 <use href="#iconButton"></use>
                                             </svg>
@@ -264,15 +277,15 @@
                                     </div>
 
                                     <div id="address-0">
-                                        <p class="has-text-weight-semibold">Lucius Zsasz</p>
+                                        <p class="has-text-weight-semibold">Scott Barton</p>
                                         <p>
-                                            200
-                                            Scarecrow Way
+                                            25
+                                            Spider-Man Street
                                         </p>
                                         <p>
-                                            Miagani Island,
-                                            New Jersey
-                                            90909
+                                            Xavier's Institute,
+                                            Wakanda
+                                            50505
                                         </p>
                                     </div>
                                 </div>
@@ -284,7 +297,7 @@
                                     class="card-content has-text-centered has-text-light has-text-weight-semibold is-size-5">
                                     <div class="has-text-right">
                                         <button class="button copy is-ghost copyButton" onclick="copyAddress(1)"
-                                            fdprocessedid="bohyi6">
+                                            fdprocessedid="n72r3p">
                                             <svg class="svgicon">
                                                 <use href="#iconButton"></use>
                                             </svg>
@@ -292,15 +305,15 @@
                                     </div>
 
                                     <div id="address-1">
-                                        <p class="has-text-weight-semibold">Renee Nigma</p>
+                                        <p class="has-text-weight-semibold">T'Challa Barnes</p>
                                         <p>
-                                            25
-                                            Crime Alley
+                                            404
+                                            Ant-Man Lane
                                         </p>
                                         <p>
-                                            Tricorner Yards,
-                                            New Jersey
-                                            44444
+                                            The Raft Prison,
+                                            Xandar
+                                            30303
                                         </p>
                                     </div>
                                 </div>
@@ -312,7 +325,7 @@
                                     class="card-content has-text-centered has-text-light has-text-weight-semibold is-size-5">
                                     <div class="has-text-right">
                                         <button class="button copy is-ghost copyButton" onclick="copyAddress(2)"
-                                            fdprocessedid="r0lsz5">
+                                            fdprocessedid="qqjxmr">
                                             <svg class="svgicon">
                                                 <use href="#iconButton"></use>
                                             </svg>
@@ -320,15 +333,15 @@
                                     </div>
 
                                     <div id="address-2">
-                                        <p class="has-text-weight-semibold">Harvey Zsasz</p>
+                                        <p class="has-text-weight-semibold">Bruce Romanoff</p>
                                         <p>
-                                            25
-                                            Cobblepot Lane
+                                            404
+                                            Guardians of the Galaxy Drive
                                         </p>
                                         <p>
-                                            Robinson Park,
-                                            East Coast Metropolis Region
-                                            00042
+                                            Latveria,
+                                            Wakanda
+                                            30303
                                         </p>
                                     </div>
                                 </div>
@@ -340,7 +353,7 @@
                                     class="card-content has-text-centered has-text-light has-text-weight-semibold is-size-5">
                                     <div class="has-text-right">
                                         <button class="button copy is-ghost copyButton" onclick="copyAddress(3)"
-                                            fdprocessedid="w90fq">
+                                            fdprocessedid="es6dql">
                                             <svg class="svgicon">
                                                 <use href="#iconButton"></use>
                                             </svg>
@@ -348,15 +361,15 @@
                                     </div>
 
                                     <div id="address-3">
-                                        <p class="has-text-weight-semibold">Selina Fox</p>
+                                        <p class="has-text-weight-semibold">Clint Odinson</p>
                                         <p>
-                                            100
-                                            Blackgate Boulevard
+                                            3030
+                                            Thor's Hammer Drive
                                         </p>
                                         <p>
-                                            Old Gotham,
-                                            Gotham State
-                                            11111
+                                            Hell's Kitchen,
+                                            Kamar-Taj
+                                            77777
                                         </p>
                                     </div>
                                 </div>
@@ -368,7 +381,7 @@
                                     class="card-content has-text-centered has-text-light has-text-weight-semibold is-size-5">
                                     <div class="has-text-right">
                                         <button class="button copy is-ghost copyButton" onclick="copyAddress(4)"
-                                            fdprocessedid="dn2m3">
+                                            fdprocessedid="3gkxat">
                                             <svg class="svgicon">
                                                 <use href="#iconButton"></use>
                                             </svg>
@@ -376,15 +389,15 @@
                                     </div>
 
                                     <div id="address-4">
-                                        <p class="has-text-weight-semibold">Harvey Dent</p>
+                                        <p class="has-text-weight-semibold">Carol Barnes</p>
                                         <p>
-                                            66
-                                            Diamond District Lane
+                                            3030
+                                            Xavier's Institute Road
                                         </p>
                                         <p>
-                                            East End,
-                                            New Jersey
-                                            10001
+                                            Central City,
+                                            Wakanda
+                                            99999
                                         </p>
                                     </div>
                                 </div>
@@ -396,7 +409,7 @@
                                     class="card-content has-text-centered has-text-light has-text-weight-semibold is-size-5">
                                     <div class="has-text-right">
                                         <button class="button copy is-ghost copyButton" onclick="copyAddress(5)"
-                                            fdprocessedid="0a8fr">
+                                            fdprocessedid="9ag6e">
                                             <svg class="svgicon">
                                                 <use href="#iconButton"></use>
                                             </svg>
@@ -404,15 +417,15 @@
                                     </div>
 
                                     <div id="address-5">
-                                        <p class="has-text-weight-semibold">Jonathan Kyle</p>
+                                        <p class="has-text-weight-semibold">Peter Barton</p>
                                         <p>
-                                            404
-                                            Robinson Park Trail
+                                            505
+                                            Thor's Hammer Drive
                                         </p>
                                         <p>
-                                            Gotham Heights,
-                                            New Jersey
-                                            11223
+                                            Kamar-Taj,
+                                            New York
+                                            55555
                                         </p>
                                     </div>
                                 </div>
@@ -424,7 +437,7 @@
                                     class="card-content has-text-centered has-text-light has-text-weight-semibold is-size-5">
                                     <div class="has-text-right">
                                         <button class="button copy is-ghost copyButton" onclick="copyAddress(6)"
-                                            fdprocessedid="bsthkj">
+                                            fdprocessedid="v7dbw">
                                             <svg class="svgicon">
                                                 <use href="#iconButton"></use>
                                             </svg>
@@ -432,42 +445,14 @@
                                     </div>
 
                                     <div id="address-6">
-                                        <p class="has-text-weight-semibold">Pamela Maroni</p>
+                                        <p class="has-text-weight-semibold">Sam Laufeyson</p>
                                         <p>
-                                            1010
-                                            Narrows Street
+                                            404
+                                            Thor's Hammer Drive
                                         </p>
                                         <p>
-                                            Tricorner Yards,
-                                            New Jersey
-                                            30303
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="column is-3 ">
-                            <div class="card cust-card mt-3" id="customDiv" style="background-color: #373952;">
-                                <div
-                                    class="card-content has-text-centered has-text-light has-text-weight-semibold is-size-5">
-                                    <div class="has-text-right">
-                                        <button class="button copy is-ghost copyButton" onclick="copyAddress(7)"
-                                            fdprocessedid="nd9d8o">
-                                            <svg class="svgicon">
-                                                <use href="#iconButton"></use>
-                                            </svg>
-                                        </button>
-                                    </div>
-
-                                    <div id="address-7">
-                                        <p class="has-text-weight-semibold">Harleen Falcone</p>
-                                        <p>
-                                            13
-                                            Crime Alley
-                                        </p>
-                                        <p>
-                                            The Narrows,
-                                            Gotham State
+                                            Xavier's Institute,
+                                            Asgard
                                             88888
                                         </p>
                                     </div>
@@ -479,8 +464,36 @@
                                 <div
                                     class="card-content has-text-centered has-text-light has-text-weight-semibold is-size-5">
                                     <div class="has-text-right">
+                                        <button class="button copy is-ghost copyButton" onclick="copyAddress(7)"
+                                            fdprocessedid="t4f6np">
+                                            <svg class="svgicon">
+                                                <use href="#iconButton"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+
+                                    <div id="address-7">
+                                        <p class="has-text-weight-semibold">Wanda Rogers</p>
+                                        <p>
+                                            3030
+                                            Shield Boulevard
+                                        </p>
+                                        <p>
+                                            The Raft Prison,
+                                            Kamar-Taj
+                                            12121
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column is-3 ">
+                            <div class="card cust-card mt-3" id="customDiv" style="background-color: #373952;">
+                                <div
+                                    class="card-content has-text-centered has-text-light has-text-weight-semibold is-size-5">
+                                    <div class="has-text-right">
                                         <button class="button copy is-ghost copyButton" onclick="copyAddress(8)"
-                                            fdprocessedid="ehn8rs">
+                                            fdprocessedid="bltpwi">
                                             <svg class="svgicon">
                                                 <use href="#iconButton"></use>
                                             </svg>
@@ -488,15 +501,15 @@
                                     </div>
 
                                     <div id="address-8">
-                                        <p class="has-text-weight-semibold">Alfred Cobblepot</p>
+                                        <p class="has-text-weight-semibold">Carol Strange</p>
                                         <p>
-                                            200
-                                            Gotham Heights Road
+                                            50
+                                            Ant-Man Lane
                                         </p>
                                         <p>
-                                            The Narrows,
-                                            Gotham State
-                                            20202
+                                            Avengers Compound,
+                                            Soviet Union
+                                            44444
                                         </p>
                                     </div>
                                 </div>
@@ -508,7 +521,7 @@
                                     class="card-content has-text-centered has-text-light has-text-weight-semibold is-size-5">
                                     <div class="has-text-right">
                                         <button class="button copy is-ghost copyButton" onclick="copyAddress(9)"
-                                            fdprocessedid="3jre96">
+                                            fdprocessedid="sncgrb">
                                             <svg class="svgicon">
                                                 <use href="#iconButton"></use>
                                             </svg>
@@ -516,15 +529,15 @@
                                     </div>
 
                                     <div id="address-9">
-                                        <p class="has-text-weight-semibold">Bruce Napier</p>
+                                        <p class="has-text-weight-semibold">Peter Danvers</p>
                                         <p>
-                                            100
-                                            Gotham Heights Road
+                                            666
+                                            Fantastic Four Plaza
                                         </p>
                                         <p>
-                                            Otisburg,
-                                            Gotham State
-                                            55555
+                                            Xavier's Institute,
+                                            Olympus
+                                            30303
                                         </p>
                                     </div>
                                 </div>
@@ -536,7 +549,7 @@
                                     class="card-content has-text-centered has-text-light has-text-weight-semibold is-size-5">
                                     <div class="has-text-right">
                                         <button class="button copy is-ghost copyButton" onclick="copyAddress(10)"
-                                            fdprocessedid="o4mkwh">
+                                            fdprocessedid="9gpeuv">
                                             <svg class="svgicon">
                                                 <use href="#iconButton"></use>
                                             </svg>
@@ -544,15 +557,15 @@
                                     </div>
 
                                     <div id="address-10">
-                                        <p class="has-text-weight-semibold">Alfred Wayne</p>
+                                        <p class="has-text-weight-semibold">Tony Barnes</p>
                                         <p>
-                                            1212
-                                            Blackgate Boulevard
+                                            25
+                                            Hawkeye's Archery Avenue
                                         </p>
                                         <p>
-                                            Bleake Island,
-                                            East Coast Metropolis Region
-                                            55555
+                                            Latveria,
+                                            New York
+                                            12121
                                         </p>
                                     </div>
                                 </div>
@@ -564,7 +577,7 @@
                                     class="card-content has-text-centered has-text-light has-text-weight-semibold is-size-5">
                                     <div class="has-text-right">
                                         <button class="button copy is-ghost copyButton" onclick="copyAddress(11)"
-                                            fdprocessedid="bakd3o">
+                                            fdprocessedid="g2ufe">
                                             <svg class="svgicon">
                                                 <use href="#iconButton"></use>
                                             </svg>
@@ -572,15 +585,15 @@
                                     </div>
 
                                     <div id="address-11">
-                                        <p class="has-text-weight-semibold">Zsasz Wayne</p>
+                                        <p class="has-text-weight-semibold">Scott Wilson</p>
                                         <p>
-                                            2525
-                                            Crime Alley
+                                            1
+                                            Avengers Tower Way
                                         </p>
                                         <p>
-                                            Bristol Township,
-                                            Gotham State
-                                            30303
+                                            Avengers Compound,
+                                            Olympus
+                                            40404
                                         </p>
                                     </div>
                                 </div>
@@ -651,21 +664,21 @@
             <footer class="footer pb-3">
 
  <div class="buttons mt-4">
-                    <a href="pages/dragon-ball.html" class="button is-dark">Dragon Ball Address</a>
-                    <a href="pages/flintstones.html" class="button is-dark">Flintstones Address</a>
-                    <a href="pages/gontham.html" class="button is-dark">Gontham Address</a>
-                    <a href="pages/hogwarts-house.html" class="button is-dark">Hogwarts House Address</a>
-                    <a href="pages/hogwarts.html" class="button is-dark">Hogwarts Address</a>
-                    <a href="pages/marvel.html" class="button is-dark">Marvel Address</a>
-                    <a href="pages/mickey-mouse.html" class="button is-dark">Mickey Mouse Address</a>
-                    <a href="pages/scooby-doo.html" class="button is-dark">Scooby Doo Address</a>
-                    <a href="pages/shrek.html" class="button is-dark">Shrek Address</a>
-                    <a href="pages/simpsons.html" class="button is-dark">Simpsons Address</a>
-                    <a href="pages/start-wars.html" class="button is-dark">Star Wars Address</a>
-                    <a href="pages/willy-wonka.html" class="button is-dark">Willy Wonka Address</a>
-                    <a href="pages/zootopia.html" class="button is-dark">Zootopia Address</a>
+                    <a href="dragon-ball.html" class="button is-dark">Dragon Ball Address</a>
+                    <a href="flintstones.html" class="button is-dark">Flintstones Address</a>
+                    <a href="gontham.html" class="button is-dark">Gontham Address</a>
+                    <a href="hogwarts-house.html" class="button is-dark">Hogwarts House Address</a>
+                    <a href="hogwarts.html" class="button is-dark">Hogwarts Address</a>
+                    <a href="marvel.html" class="button is-dark">Marvel Address</a>
+                    <a href="mickey-mouse.html" class="button is-dark">Mickey Mouse Address</a>
+                    <a href="scooby-doo.html" class="button is-dark">Scooby Doo Address</a>
+                    <a href="shrek.html" class="button is-dark">Shrek Address</a>
+                    <a href="simpsons.html" class="button is-dark">Simpsons Address</a>
+                    <a href="start-wars.html" class="button is-dark">Star Wars Address</a>
+                    <a href="willy-wonka.html" class="button is-dark">Willy Wonka Address</a>
+                    <a href="zootopia.html" class="button is-dark">Zootopia Address</a>
                 </div>
-               
+
                 <div class="content has-text-centered">
                     <h2 class="has-text-weight-semibold has-text-light"
                         style="font-family: 'Lobster', cursive; font-weight: 100;">
@@ -681,7 +694,7 @@
 
         </div>
     </section>
-    <script src="./index.js"></script>
+    <script src="../index.js"></script>
 
     <!-- SVG's -->
     <div class="is-hidden">

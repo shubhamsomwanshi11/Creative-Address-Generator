@@ -23,7 +23,9 @@ addListners();
 async function loadAddressData() {
     try {
         // Fetch the data from the specified file
-        const response = await fetch('./data/simpson.json');
+        const generatorName = document.getElementById('generatorDName').value.trim();
+
+        const response = await fetch(`/data/${generatorName}.json`);
 
         // Check if the response is successful
         if (!response.ok) {
@@ -108,7 +110,7 @@ function renderAddresses(addresses, container) {
     let generatedHTML = '';
 
     addresses.forEach((address, index) => {
-        generatedHTML += `<div class="column is-3">
+        generatedHTML += `<div class="column ${container == 'addressContainer' ? 'is-3' : ''} ">
             <div class="card cust-card mt-3" id="customDiv" style="background-color: #373952;">
                 <div
                     class="card-content has-text-centered has-text-light has-text-weight-semibold is-size-5">
@@ -149,9 +151,11 @@ function getRandomElement(arr) {
 
 const assignData = () => {
     const generatorName = document.getElementById('generatorName');
+    const generatorName2 = document.getElementById('generatorName2');
     const description = document.getElementById('description');
 
     generatorName.innerHTML = addressData.generator;
+    generatorName2.innerHTML = addressData.generator;
     description.innerHTML = addressData.description;
 }
 

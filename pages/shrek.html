@@ -4,31 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Creative Address Generator</title>
+    <title>Shrek’s Swamp Address Generator</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
     <section class="section">
         <div id="mainBox">
-            <input type="text" value="simpson" class="input is-hidden" id="generatorDName" />
-
+            <input type="text" value="shrek" class="input is-hidden" id="generatorDName" />
             <!-- First Div -->
             <div id="template" class="columns  is-flex-desktop-only is-align-items-center">
                 <div class="column is-4">
                     <figure class="image" style="margin: auto;">
-                        <img class="" style="border-radius:8px ;" src="/assets/simpsons.png" />
+                        <img class="" style="border-radius:8px ;" src="/assets/shrek.png" />
                     </figure>
                 </div>
                 <div class="column">
                     <div class="box" style="background-color: #13141e;">
-                        <h1 class="title has-text-light has-text-weight-semibold" id="generatorName">The Simpsons
-                            Address</h1>
-                        <p class="is-size-5" id="description">Let's create a random, hilariously quirky address inspired
-                            by the world
-                            of
-                            <span class="has-text-weight-semibold">The Simpsons! 😎</span>
+                        <h1 class="title has-text-light has-text-weight-semibold" id="generatorName">Shrek’s Swamp
+                            Address Generator</h1>
+                        <p class="is-size-5" id="description">Generates random addresses inspired by the world of Shrek,
+                            including locations from the swamp to Farquaad's kingdom.
                         </p>
                         <hr>
                         <div class="columns">
@@ -36,9 +33,27 @@
                                 <div class="card mt-3" id="customDiv" style="background-color: #373952;">
                                     <div
                                         class="card-content has-text-centered has-text-light has-text-weight-semibold is-size-5">
-                                        <p>Homer Simpson</p>
-                                        <p>742 Evergreen Terrace</p>
-                                        <p>Springfield, Illinois, 49007</p>
+                                        <div class="has-text-right">
+                                            <button class="button copy is-ghost copyButton" onclick="copyAddress(0)"
+                                                fdprocessedid="wmr50j">
+                                                <svg class="svgicon">
+                                                    <use href="#iconButton"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+
+                                        <div id="address-0">
+                                            <p class="has-text-weight-semibold">Pinocchio Three Pigs</p>
+                                            <p>
+                                                100
+                                                The Princess Tower Road
+                                            </p>
+                                            <p>
+                                                The Dragon's Den,
+                                                Fairy Tale Kingdom
+                                                90909
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
 
@@ -116,9 +131,7 @@
                 <!-- Controllers -->
                 <h1 class="has-text-centered title has-text-light"
                     style="font-family: 'Lobster', cursive; font-weight: 100;" id="generatorName2">
-                    Gontham City
-                    Address
-                    Generator</h1>
+                    Shrek’s Swamp Address Generator</h1>
                 <hr />
                 <div class="columns ">
                     <div class="column is-2">
@@ -256,7 +269,7 @@
                                     class="card-content has-text-centered has-text-light has-text-weight-semibold is-size-5">
                                     <div class="has-text-right">
                                         <button class="button copy is-ghost copyButton" onclick="copyAddress(0)"
-                                            fdprocessedid="0nuj9a">
+                                            fdprocessedid="3infjyq">
                                             <svg class="svgicon">
                                                 <use href="#iconButton"></use>
                                             </svg>
@@ -264,154 +277,14 @@
                                     </div>
 
                                     <div id="address-0">
-                                        <p class="has-text-weight-semibold">Lucius Zsasz</p>
+                                        <p class="has-text-weight-semibold">Fiona Gingerbread</p>
                                         <p>
-                                            200
-                                            Scarecrow Way
+                                            7
+                                            Donkey Lane
                                         </p>
                                         <p>
-                                            Miagani Island,
-                                            New Jersey
-                                            90909
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="column is-3 ">
-                            <div class="card cust-card mt-3" id="customDiv" style="background-color: #373952;">
-                                <div
-                                    class="card-content has-text-centered has-text-light has-text-weight-semibold is-size-5">
-                                    <div class="has-text-right">
-                                        <button class="button copy is-ghost copyButton" onclick="copyAddress(1)"
-                                            fdprocessedid="bohyi6">
-                                            <svg class="svgicon">
-                                                <use href="#iconButton"></use>
-                                            </svg>
-                                        </button>
-                                    </div>
-
-                                    <div id="address-1">
-                                        <p class="has-text-weight-semibold">Renee Nigma</p>
-                                        <p>
-                                            25
-                                            Crime Alley
-                                        </p>
-                                        <p>
-                                            Tricorner Yards,
-                                            New Jersey
-                                            44444
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="column is-3 ">
-                            <div class="card cust-card mt-3" id="customDiv" style="background-color: #373952;">
-                                <div
-                                    class="card-content has-text-centered has-text-light has-text-weight-semibold is-size-5">
-                                    <div class="has-text-right">
-                                        <button class="button copy is-ghost copyButton" onclick="copyAddress(2)"
-                                            fdprocessedid="r0lsz5">
-                                            <svg class="svgicon">
-                                                <use href="#iconButton"></use>
-                                            </svg>
-                                        </button>
-                                    </div>
-
-                                    <div id="address-2">
-                                        <p class="has-text-weight-semibold">Harvey Zsasz</p>
-                                        <p>
-                                            25
-                                            Cobblepot Lane
-                                        </p>
-                                        <p>
-                                            Robinson Park,
-                                            East Coast Metropolis Region
-                                            00042
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="column is-3 ">
-                            <div class="card cust-card mt-3" id="customDiv" style="background-color: #373952;">
-                                <div
-                                    class="card-content has-text-centered has-text-light has-text-weight-semibold is-size-5">
-                                    <div class="has-text-right">
-                                        <button class="button copy is-ghost copyButton" onclick="copyAddress(3)"
-                                            fdprocessedid="w90fq">
-                                            <svg class="svgicon">
-                                                <use href="#iconButton"></use>
-                                            </svg>
-                                        </button>
-                                    </div>
-
-                                    <div id="address-3">
-                                        <p class="has-text-weight-semibold">Selina Fox</p>
-                                        <p>
-                                            100
-                                            Blackgate Boulevard
-                                        </p>
-                                        <p>
-                                            Old Gotham,
-                                            Gotham State
-                                            11111
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="column is-3 ">
-                            <div class="card cust-card mt-3" id="customDiv" style="background-color: #373952;">
-                                <div
-                                    class="card-content has-text-centered has-text-light has-text-weight-semibold is-size-5">
-                                    <div class="has-text-right">
-                                        <button class="button copy is-ghost copyButton" onclick="copyAddress(4)"
-                                            fdprocessedid="dn2m3">
-                                            <svg class="svgicon">
-                                                <use href="#iconButton"></use>
-                                            </svg>
-                                        </button>
-                                    </div>
-
-                                    <div id="address-4">
-                                        <p class="has-text-weight-semibold">Harvey Dent</p>
-                                        <p>
-                                            66
-                                            Diamond District Lane
-                                        </p>
-                                        <p>
-                                            East End,
-                                            New Jersey
-                                            10001
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="column is-3 ">
-                            <div class="card cust-card mt-3" id="customDiv" style="background-color: #373952;">
-                                <div
-                                    class="card-content has-text-centered has-text-light has-text-weight-semibold is-size-5">
-                                    <div class="has-text-right">
-                                        <button class="button copy is-ghost copyButton" onclick="copyAddress(5)"
-                                            fdprocessedid="0a8fr">
-                                            <svg class="svgicon">
-                                                <use href="#iconButton"></use>
-                                            </svg>
-                                        </button>
-                                    </div>
-
-                                    <div id="address-5">
-                                        <p class="has-text-weight-semibold">Jonathan Kyle</p>
-                                        <p>
-                                            404
-                                            Robinson Park Trail
-                                        </p>
-                                        <p>
-                                            Gotham Heights,
-                                            New Jersey
+                                            The Three Blind Mice Manor,
+                                            Kingdom of Farquaad
                                             11223
                                         </p>
                                     </div>
@@ -423,24 +296,24 @@
                                 <div
                                     class="card-content has-text-centered has-text-light has-text-weight-semibold is-size-5">
                                     <div class="has-text-right">
-                                        <button class="button copy is-ghost copyButton" onclick="copyAddress(6)"
-                                            fdprocessedid="bsthkj">
+                                        <button class="button copy is-ghost copyButton" onclick="copyAddress(1)"
+                                            fdprocessedid="v9ulvp">
                                             <svg class="svgicon">
                                                 <use href="#iconButton"></use>
                                             </svg>
                                         </button>
                                     </div>
 
-                                    <div id="address-6">
-                                        <p class="has-text-weight-semibold">Pamela Maroni</p>
+                                    <div id="address-1">
+                                        <p class="has-text-weight-semibold">Prince Kingdom</p>
                                         <p>
-                                            1010
-                                            Narrows Street
+                                            25
+                                            The Three Little Pigs Street
                                         </p>
                                         <p>
-                                            Tricorner Yards,
-                                            New Jersey
-                                            30303
+                                            The Puss in Boots Lair,
+                                            Kingdom of Farquaad
+                                            11223
                                         </p>
                                     </div>
                                 </div>
@@ -451,24 +324,24 @@
                                 <div
                                     class="card-content has-text-centered has-text-light has-text-weight-semibold is-size-5">
                                     <div class="has-text-right">
-                                        <button class="button copy is-ghost copyButton" onclick="copyAddress(7)"
-                                            fdprocessedid="nd9d8o">
+                                        <button class="button copy is-ghost copyButton" onclick="copyAddress(2)"
+                                            fdprocessedid="17a0ib">
                                             <svg class="svgicon">
                                                 <use href="#iconButton"></use>
                                             </svg>
                                         </button>
                                     </div>
 
-                                    <div id="address-7">
-                                        <p class="has-text-weight-semibold">Harleen Falcone</p>
+                                    <div id="address-2">
+                                        <p class="has-text-weight-semibold">Prince Swamp</p>
                                         <p>
-                                            13
-                                            Crime Alley
+                                            75
+                                            Dragon's Rest Road
                                         </p>
                                         <p>
-                                            The Narrows,
-                                            Gotham State
-                                            88888
+                                            The Farquaad Kingdom,
+                                            Duloc
+                                            60606
                                         </p>
                                     </div>
                                 </div>
@@ -479,23 +352,51 @@
                                 <div
                                     class="card-content has-text-centered has-text-light has-text-weight-semibold is-size-5">
                                     <div class="has-text-right">
-                                        <button class="button copy is-ghost copyButton" onclick="copyAddress(8)"
-                                            fdprocessedid="ehn8rs">
+                                        <button class="button copy is-ghost copyButton" onclick="copyAddress(3)"
+                                            fdprocessedid="fmajf8">
                                             <svg class="svgicon">
                                                 <use href="#iconButton"></use>
                                             </svg>
                                         </button>
                                     </div>
 
-                                    <div id="address-8">
-                                        <p class="has-text-weight-semibold">Alfred Cobblepot</p>
+                                    <div id="address-3">
+                                        <p class="has-text-weight-semibold">Three Ogre</p>
                                         <p>
-                                            200
-                                            Gotham Heights Road
+                                            7
+                                            The Three Little Pigs Street
                                         </p>
                                         <p>
-                                            The Narrows,
-                                            Gotham State
+                                            The Royal Castle,
+                                            Kingdom of Farquaad
+                                            80808
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column is-3 ">
+                            <div class="card cust-card mt-3" id="customDiv" style="background-color: #373952;">
+                                <div
+                                    class="card-content has-text-centered has-text-light has-text-weight-semibold is-size-5">
+                                    <div class="has-text-right">
+                                        <button class="button copy is-ghost copyButton" onclick="copyAddress(4)"
+                                            fdprocessedid="afvze4">
+                                            <svg class="svgicon">
+                                                <use href="#iconButton"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+
+                                    <div id="address-4">
+                                        <p class="has-text-weight-semibold">Mice Ogre</p>
+                                        <p>
+                                            75
+                                            The Magic Mirror Street
+                                        </p>
+                                        <p>
+                                            Fiona's Kingdom,
+                                            Fairy Tale Kingdom
                                             20202
                                         </p>
                                     </div>
@@ -507,8 +408,120 @@
                                 <div
                                     class="card-content has-text-centered has-text-light has-text-weight-semibold is-size-5">
                                     <div class="has-text-right">
+                                        <button class="button copy is-ghost copyButton" onclick="copyAddress(5)"
+                                            fdprocessedid="vfu8k">
+                                            <svg class="svgicon">
+                                                <use href="#iconButton"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+
+                                    <div id="address-5">
+                                        <p class="has-text-weight-semibold">Mice Swamp</p>
+                                        <p>
+                                            505
+                                            The Three Little Pigs Street
+                                        </p>
+                                        <p>
+                                            Shrek's Swamp,
+                                            Kingdom of Farquaad
+                                            66666
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column is-3 ">
+                            <div class="card cust-card mt-3" id="customDiv" style="background-color: #373952;">
+                                <div
+                                    class="card-content has-text-centered has-text-light has-text-weight-semibold is-size-5">
+                                    <div class="has-text-right">
+                                        <button class="button copy is-ghost copyButton" onclick="copyAddress(6)"
+                                            fdprocessedid="h5nevj">
+                                            <svg class="svgicon">
+                                                <use href="#iconButton"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+
+                                    <div id="address-6">
+                                        <p class="has-text-weight-semibold">Prince Realm</p>
+                                        <p>
+                                            2020
+                                            Shrek's Rescue Path
+                                        </p>
+                                        <p>
+                                            The Shrek Cottage,
+                                            Ogre's Realm
+                                            67890
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column is-3 ">
+                            <div class="card cust-card mt-3" id="customDiv" style="background-color: #373952;">
+                                <div
+                                    class="card-content has-text-centered has-text-light has-text-weight-semibold is-size-5">
+                                    <div class="has-text-right">
+                                        <button class="button copy is-ghost copyButton" onclick="copyAddress(7)"
+                                            fdprocessedid="qmw404">
+                                            <svg class="svgicon">
+                                                <use href="#iconButton"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+
+                                    <div id="address-7">
+                                        <p class="has-text-weight-semibold">Ogre Prince</p>
+                                        <p>
+                                            3
+                                            The Donkey's Den Road
+                                        </p>
+                                        <p>
+                                            The Shrek Cottage,
+                                            Fairy Tale Kingdom
+                                            12121
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column is-3 ">
+                            <div class="card cust-card mt-3" id="customDiv" style="background-color: #373952;">
+                                <div
+                                    class="card-content has-text-centered has-text-light has-text-weight-semibold is-size-5">
+                                    <div class="has-text-right">
+                                        <button class="button copy is-ghost copyButton" onclick="copyAddress(8)"
+                                            fdprocessedid="rjrskj">
+                                            <svg class="svgicon">
+                                                <use href="#iconButton"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+
+                                    <div id="address-8">
+                                        <p class="has-text-weight-semibold">Donkey Wolf</p>
+                                        <p>
+                                            2020
+                                            Duloc Boulevard
+                                        </p>
+                                        <p>
+                                            The Three Blind Mice Manor,
+                                            Duloc
+                                            12345
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column is-3 ">
+                            <div class="card cust-card mt-3" id="customDiv" style="background-color: #373952;">
+                                <div
+                                    class="card-content has-text-centered has-text-light has-text-weight-semibold is-size-5">
+                                    <div class="has-text-right">
                                         <button class="button copy is-ghost copyButton" onclick="copyAddress(9)"
-                                            fdprocessedid="3jre96">
+                                            fdprocessedid="i52sv8">
                                             <svg class="svgicon">
                                                 <use href="#iconButton"></use>
                                             </svg>
@@ -516,15 +529,15 @@
                                     </div>
 
                                     <div id="address-9">
-                                        <p class="has-text-weight-semibold">Bruce Napier</p>
+                                        <p class="has-text-weight-semibold">Farquaad Dragon</p>
                                         <p>
-                                            100
-                                            Gotham Heights Road
+                                            2020
+                                            Fiona's Castle Drive
                                         </p>
                                         <p>
-                                            Otisburg,
-                                            Gotham State
-                                            55555
+                                            The Ogre's Lair,
+                                            Duloc
+                                            11111
                                         </p>
                                     </div>
                                 </div>
@@ -536,7 +549,7 @@
                                     class="card-content has-text-centered has-text-light has-text-weight-semibold is-size-5">
                                     <div class="has-text-right">
                                         <button class="button copy is-ghost copyButton" onclick="copyAddress(10)"
-                                            fdprocessedid="o4mkwh">
+                                            fdprocessedid="7qcbzw">
                                             <svg class="svgicon">
                                                 <use href="#iconButton"></use>
                                             </svg>
@@ -544,15 +557,15 @@
                                     </div>
 
                                     <div id="address-10">
-                                        <p class="has-text-weight-semibold">Alfred Wayne</p>
+                                        <p class="has-text-weight-semibold">Fairy Godmother Blind Mice</p>
                                         <p>
-                                            1212
-                                            Blackgate Boulevard
+                                            777
+                                            The Magic Mirror Street
                                         </p>
                                         <p>
-                                            Bleake Island,
-                                            East Coast Metropolis Region
-                                            55555
+                                            The Royal Castle,
+                                            Duloc
+                                            67890
                                         </p>
                                     </div>
                                 </div>
@@ -564,7 +577,7 @@
                                     class="card-content has-text-centered has-text-light has-text-weight-semibold is-size-5">
                                     <div class="has-text-right">
                                         <button class="button copy is-ghost copyButton" onclick="copyAddress(11)"
-                                            fdprocessedid="bakd3o">
+                                            fdprocessedid="21z35">
                                             <svg class="svgicon">
                                                 <use href="#iconButton"></use>
                                             </svg>
@@ -572,15 +585,15 @@
                                     </div>
 
                                     <div id="address-11">
-                                        <p class="has-text-weight-semibold">Zsasz Wayne</p>
+                                        <p class="has-text-weight-semibold">Fairy Godmother Fiona</p>
                                         <p>
-                                            2525
-                                            Crime Alley
+                                            3030
+                                            Fiona's Garden Path
                                         </p>
                                         <p>
-                                            Bristol Township,
-                                            Gotham State
-                                            30303
+                                            The Gingerbread Village,
+                                            Swamp
+                                            10101
                                         </p>
                                     </div>
                                 </div>
@@ -651,21 +664,21 @@
             <footer class="footer pb-3">
 
  <div class="buttons mt-4">
-                    <a href="pages/dragon-ball.html" class="button is-dark">Dragon Ball Address</a>
-                    <a href="pages/flintstones.html" class="button is-dark">Flintstones Address</a>
-                    <a href="pages/gontham.html" class="button is-dark">Gontham Address</a>
-                    <a href="pages/hogwarts-house.html" class="button is-dark">Hogwarts House Address</a>
-                    <a href="pages/hogwarts.html" class="button is-dark">Hogwarts Address</a>
-                    <a href="pages/marvel.html" class="button is-dark">Marvel Address</a>
-                    <a href="pages/mickey-mouse.html" class="button is-dark">Mickey Mouse Address</a>
-                    <a href="pages/scooby-doo.html" class="button is-dark">Scooby Doo Address</a>
-                    <a href="pages/shrek.html" class="button is-dark">Shrek Address</a>
-                    <a href="pages/simpsons.html" class="button is-dark">Simpsons Address</a>
-                    <a href="pages/start-wars.html" class="button is-dark">Star Wars Address</a>
-                    <a href="pages/willy-wonka.html" class="button is-dark">Willy Wonka Address</a>
-                    <a href="pages/zootopia.html" class="button is-dark">Zootopia Address</a>
+                    <a href="dragon-ball.html" class="button is-dark">Dragon Ball Address</a>
+                    <a href="flintstones.html" class="button is-dark">Flintstones Address</a>
+                    <a href="gontham.html" class="button is-dark">Gontham Address</a>
+                    <a href="hogwarts-house.html" class="button is-dark">Hogwarts House Address</a>
+                    <a href="hogwarts.html" class="button is-dark">Hogwarts Address</a>
+                    <a href="marvel.html" class="button is-dark">Marvel Address</a>
+                    <a href="mickey-mouse.html" class="button is-dark">Mickey Mouse Address</a>
+                    <a href="scooby-doo.html" class="button is-dark">Scooby Doo Address</a>
+                    <a href="shrek.html" class="button is-dark">Shrek Address</a>
+                    <a href="simpsons.html" class="button is-dark">Simpsons Address</a>
+                    <a href="start-wars.html" class="button is-dark">Star Wars Address</a>
+                    <a href="willy-wonka.html" class="button is-dark">Willy Wonka Address</a>
+                    <a href="zootopia.html" class="button is-dark">Zootopia Address</a>
                 </div>
-               
+
                 <div class="content has-text-centered">
                     <h2 class="has-text-weight-semibold has-text-light"
                         style="font-family: 'Lobster', cursive; font-weight: 100;">
@@ -681,7 +694,7 @@
 
         </div>
     </section>
-    <script src="./index.js"></script>
+    <script src="../index.js"></script>
 
     <!-- SVG's -->
     <div class="is-hidden">
