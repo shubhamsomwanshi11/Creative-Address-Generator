@@ -25,7 +25,7 @@ async function loadAddressData() {
         // Fetch the data from the specified file
         const generatorName = document.getElementById('generatorDName').value.trim();
 
-        const response = await fetch(`/data/${generatorName}.json`);
+        const response = await fetch(`../data/${generatorName}.json`);
 
         // Check if the response is successful
         if (!response.ok) {
